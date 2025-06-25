@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "deepoceans",
+  "version": "${version}",
+  "name": "Deep Oceans",
+  "description": "Adds new ocean generation with deep trenches and mountain ridges",
+  "authors": ["Exxxterius777"],
+  "contact": {
+    "homepage": "https://example.com/",
+    "sources": "https://github.com/yourname/deep-oceans"
+  },
+  "license": "MIT",
+  "icon": "assets/deepoceans/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.deepoceans.DeepOceans"],
+    "terrablender": ["com.example.deepoceans.world.OceanBiomes"]
+  },
+  "mixins": [
+    "deepoceans.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "epic-terrain-generation": "*",
+    "terrestria": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/exxxterius777mikhail"
+      }
+    }
+  }
+}
